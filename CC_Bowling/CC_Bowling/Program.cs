@@ -2,11 +2,16 @@
 
 namespace CC_Bowling
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Level1.Run();
+            //Level2.Run();
+            //Level3.Run();
+            //Level4.Run();
+            //Level5.Run();
+            //Level6.Run();
         }
     }
 }
