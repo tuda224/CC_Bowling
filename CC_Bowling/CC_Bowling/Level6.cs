@@ -27,6 +27,7 @@ namespace CC_Bowling
             {
                 var currentRound = new Round();
                 currentRound.First = Int32.Parse(points[i]);
+                // if strike happened no second throw is in input list
                 if (currentRound.First != 10)
                 {
                     try
@@ -74,6 +75,7 @@ namespace CC_Bowling
                     }
 
                     rounds[i].Points = 10 + rounds[i + 1].First;
+                    // you can only take second throw of next round if next round isn't a strike
                     if (rounds[i + 1].Second != null)
                     {
                         rounds[i].Points += rounds[i + 1].Second.Value;
